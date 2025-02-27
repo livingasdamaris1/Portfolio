@@ -4,119 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Damaris Danso</title>
-    <style>
-      /* Reset and base styles */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    
-      }
-@font-face {
-    font-family: 'italiana';
-    src: url(./Fonts/italiana/Italiana-Regular.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'roboto';
-    src: url(./Fonts/roboto/Roboto-Regular.ttf) format('truetype');
-}
-      body {
-        font-family: 'roboto', sans-serif;
-        background-color: #eac09a;
-        background-image: url(./images/hero.jpg);
-        background-size: cover;
-        background-position: center;
-        color: #fdfaf6;
-        line-height: 1.5;
-        padding: 40px 20px;
-      }
-
-      /* Layout */
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      /* Header */
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 100px;
-      }
-
-      .logo {
-        font-size: 18px;
-        font-weight: 500;
-      }
-
-      .nav {
-        display: flex;
-        gap: 25px;
-      }
-
-      .nav a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      /* Main content */
-      .main-title {
-        font-size: clamp(48px, 10vw, 120px);
-        font-weight: 500;
-        line-height: 1.1;
-        margin-bottom: 80px;
-      }
-
-      /* Footer */
-      footer {
-        margin-top: 200px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-      }
-
-      .folio-label {
-        font-size: 32px;
-        font-weight: 500;
-      }
-
-      .footer-section h3 {
-        font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 10px;
-      }
-
-      .footer-section p {
-        font-size: 16px;
-      }
-
-      /* Responsive adjustments */
-      @media (max-width: 768px) {
-        header {
-          margin-bottom: 60px;
-        }
-
-        .main-title {
-          margin-bottom: 40px;
-        }
-
-        footer {
-          margin-top: 120px;
-          grid-template-columns: 1fr;
-        }
-      }
-
-      @media (max-width: 480px) {
-        body {
-          padding: 20px 15px;
-        }
-
-        header {
-          margin-bottom: 40px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div class="container">
@@ -124,14 +12,14 @@
       <header>
         <div class="logo">Damaris Adu Danso</div>
         <nav class="nav">
-          <a href="#">Index</a>
-          <a href="./profile.html">Profile</a>
-        </nav>
+          <p class="effect-underline"><a href="#">Index</a></p>
+          <p class="effect-underline"><a href="./profile.html">Profile</a></p>
+       </nav>
       </header>
 
       <!-- Main content -->
       <main>
-        <h1 class="main-title" font-family="italiana">Creative<br />Developer</h1>
+        <h1 class="main-title">Creative<br />Developer</h1>
       </main>
       <section class="projects-section">
         <h2 class="section-title">Selected Projects</h2>
